@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SignUpView.swift
 //  Assessment
 //
 //  Created by Oluwatobi Omotayo on 14/06/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SignUpView: View {
 	var body: some View {
 		VStack {
 			Image(systemName: "globe")
@@ -19,8 +19,8 @@ struct ContentView: View {
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
 	static var previews: some View {
-		ContentView()
+		SignUpView()
 	}
 }
