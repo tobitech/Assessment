@@ -50,8 +50,10 @@ struct SignUpView: View {
 	}
 }
 
+#if DEBUG
 struct SignUpView_Previews: PreviewProvider {
 	static var previews: some View {
 		SignUpView(model: .init())
 	}
 }
+#endif

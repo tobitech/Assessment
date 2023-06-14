@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+	var model: HomeViewModel
+	
+	init(model: HomeViewModel = .init()) {
+		self.model = model
+	}
+	
 	var body: some View {
-		Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		VStack {
+			Text("Welcome!")
+				.font(.largeTitle)
+				.padding()
+			
+			ProfileItemView(title: "First name", value: self.model.userData?.name ?? "")
+			ProfileItemView(title: "Username", value: self.model.userData?.username ?? "")
+			ProfileItemView(title: "Email", value: self.model.userData?.email ?? "")
+			ProfileItemView(title: "Phone", value: self.model.userData?.phone ?? "")
+			
+			Spacer()
+		}
 	}
 }
 
+#if DEBUG
 struct HomeView_Previews: PreviewProvider {
 	static var previews: some View {
 		HomeView()
 	}
 }
+#endif

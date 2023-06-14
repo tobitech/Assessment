@@ -17,6 +17,9 @@
 		0A216E822A3A0CD000BD5974 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E812A3A0CD000BD5974 /* Model.swift */; };
 		0A216E852A3A11DC00BD5974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E842A3A11DC00BD5974 /* HomeView.swift */; };
 		0A216E8A2A3A122A00BD5974 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E892A3A122A00BD5974 /* HomeViewModel.swift */; };
+		0A216E8D2A3A1F0700BD5974 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E8C2A3A1F0700BD5974 /* RootView.swift */; };
+		0A216E8F2A3A1F3500BD5974 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E8E2A3A1F3500BD5974 /* RootViewModel.swift */; };
+		0A216E912A3A217900BD5974 /* ProfileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E902A3A217900BD5974 /* ProfileItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		0A216E812A3A0CD000BD5974 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0A216E842A3A11DC00BD5974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0A216E892A3A122A00BD5974 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0A216E8C2A3A1F0700BD5974 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0A216E8E2A3A1F3500BD5974 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		0A216E902A3A217900BD5974 /* ProfileItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			children = (
 				0A216E6D2A39D54600BD5974 /* SignUpView.swift */,
 				0A216E842A3A11DC00BD5974 /* HomeView.swift */,
+				0A216E8C2A3A1F0700BD5974 /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0A216E7F2A39D8B500BD5974 /* InputField.swift */,
+				0A216E902A3A217900BD5974 /* ProfileItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			children = (
 				0A216E892A3A122A00BD5974 /* HomeViewModel.swift */,
 				0A216E7B2A39D69500BD5974 /* SignUpViewModel.swift */,
+				0A216E8E2A3A1F3500BD5974 /* RootViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -197,11 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A216E8F2A3A1F3500BD5974 /* RootViewModel.swift in Sources */,
 				0A216E6E2A39D54600BD5974 /* SignUpView.swift in Sources */,
 				0A216E852A3A11DC00BD5974 /* HomeView.swift in Sources */,
 				0A216E7C2A39D69500BD5974 /* SignUpViewModel.swift in Sources */,
 				0A216E8A2A3A122A00BD5974 /* HomeViewModel.swift in Sources */,
 				0A216E7E2A39D75A00BD5974 /* DataStore.swift in Sources */,
+				0A216E912A3A217900BD5974 /* ProfileItemView.swift in Sources */,
+				0A216E8D2A3A1F0700BD5974 /* RootView.swift in Sources */,
 				0A216E822A3A0CD000BD5974 /* Model.swift in Sources */,
 				0A216E802A39D8B500BD5974 /* InputField.swift in Sources */,
 				0A216E6C2A39D54600BD5974 /* AssessmentApp.swift in Sources */,
