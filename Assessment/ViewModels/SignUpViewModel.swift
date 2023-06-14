@@ -9,6 +9,7 @@ import SwiftUI
 
 class SignUpViewModel: ObservableObject {
 	var dataStore: DataStore
+	var signupSuccessful: (() -> Void)?
 	
 	@Published var disableSignUpButton: Bool
 	
@@ -40,6 +41,7 @@ class SignUpViewModel: ObservableObject {
 	
 	init(
 		dataStore: DataStore = .live,
+		signupSuccessul: (() -> Void)? = nil,
 		disableSignUpButton: Bool = true,
 		name: String = "",
 		username: String = "",
@@ -48,6 +50,7 @@ class SignUpViewModel: ObservableObject {
 		password: String = ""
 	) {
 		self.dataStore = dataStore
+		self.signupSuccessful = signupSuccessul
 		self.disableSignUpButton = disableSignUpButton
 		self.name = name
 		self.username = username
@@ -66,6 +69,7 @@ class SignUpViewModel: ObservableObject {
 				password: self.password
 			)
 			try self.dataStore.saveUserData(data)
+			self.signupSuccessful?()
 		} catch {
 			print(error.localizedDescription)
 		}

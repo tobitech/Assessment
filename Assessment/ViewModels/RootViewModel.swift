@@ -7,14 +7,27 @@
 
 import Foundation
 
-class RootViewModel {
+class RootViewModel: ObservableObject {
 	var dataStore: DataStore
-	var userData: UserData?
+	@Published var userData: UserData?
+	
+	var homeModel: HomeViewModel
+	var signupModel: SignUpViewModel
 	
 	init(
-		dataStore: DataStore = .live
+		dataStore: DataStore = .live,
+		userData: UserData? = nil
 	) {
 		self.dataStore = dataStore
+		self.homeModel = HomeViewModel()
+		self.signupModel = SignUpViewModel()
+		self.userData = userData
+		
+		self.getUser()
+		
+		self.signupModel.signupSuccessful = {[weak self] in
+			self?.getUser()
+		}
 	}
 	
 	private func getUser() {

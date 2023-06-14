@@ -15,10 +15,9 @@ struct ProfileItemView: View {
 		VStack(spacing: 0) {
 			HStack {
 				Text(self.title)
-					.fontWeight(.medium)
+					.foregroundColor(.secondary)
 				Spacer()
 				Text(self.value)
-					.foregroundColor(.secondary)
 			}
 			.padding()
 			Divider()
