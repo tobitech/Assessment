@@ -27,4 +27,8 @@ class SignUpViewModel: ObservableObject {
 		self.phone = phone
 		self.password = password
 	}
+	
+	func signUp() {
+		
+	}
 }
