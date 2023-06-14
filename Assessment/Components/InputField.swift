@@ -10,11 +10,15 @@ import SwiftUI
 struct InputField: View {
 	var prompt: String
 	@Binding var text: String
+	var keyboardType: UIKeyboardType = .default
 	
 	var body: some View {
 		VStack(spacing: 0) {
 			TextField(prompt, text: self.$text)
 				.padding(10)
+				.keyboardType(self.keyboardType)
+				.autocorrectionDisabled()
+				.textInputAutocapitalization(.never)
 			Divider()
 		}
 		.frame(height: 50)

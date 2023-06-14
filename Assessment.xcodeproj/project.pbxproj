@@ -15,6 +15,8 @@
 		0A216E7E2A39D75A00BD5974 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E7D2A39D75A00BD5974 /* DataStore.swift */; };
 		0A216E802A39D8B500BD5974 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E7F2A39D8B500BD5974 /* InputField.swift */; };
 		0A216E822A3A0CD000BD5974 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E812A3A0CD000BD5974 /* Model.swift */; };
+		0A216E852A3A11DC00BD5974 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E842A3A11DC00BD5974 /* HomeView.swift */; };
+		0A216E8A2A3A122A00BD5974 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A216E892A3A122A00BD5974 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0A216E7D2A39D75A00BD5974 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		0A216E7F2A39D8B500BD5974 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		0A216E812A3A0CD000BD5974 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0A216E842A3A11DC00BD5974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0A216E892A3A122A00BD5974 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +64,14 @@
 		0A216E6A2A39D54600BD5974 /* Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				0A216E8B2A3A123600BD5974 /* App */,
+				0A216E882A3A121600BD5974 /* ViewModels */,
+				0A216E872A3A120400BD5974 /* Model */,
+				0A216E862A3A11F700BD5974 /* Components */,
+				0A216E832A3A11C000BD5974 /* Views */,
 				0A216E712A39D54700BD5974 /* Assessment.entitlements */,
-				0A216E6B2A39D54600BD5974 /* AssessmentApp.swift */,
-				0A216E7D2A39D75A00BD5974 /* DataStore.swift */,
-				0A216E6D2A39D54600BD5974 /* SignUpView.swift */,
-				0A216E7B2A39D69500BD5974 /* SignUpViewModel.swift */,
 				0A216E6F2A39D54700BD5974 /* Assets.xcassets */,
 				0A216E722A39D54700BD5974 /* Preview Content */,
-				0A216E7F2A39D8B500BD5974 /* InputField.swift */,
-				0A216E812A3A0CD000BD5974 /* Model.swift */,
 			);
 			path = Assessment;
 			sourceTree = "<group>";
@@ -79,6 +82,49 @@
 				0A216E732A39D54700BD5974 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A216E832A3A11C000BD5974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A216E6D2A39D54600BD5974 /* SignUpView.swift */,
+				0A216E842A3A11DC00BD5974 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A216E862A3A11F700BD5974 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0A216E7F2A39D8B500BD5974 /* InputField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0A216E872A3A120400BD5974 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A216E7D2A39D75A00BD5974 /* DataStore.swift */,
+				0A216E812A3A0CD000BD5974 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A216E882A3A121600BD5974 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A216E892A3A122A00BD5974 /* HomeViewModel.swift */,
+				0A216E7B2A39D69500BD5974 /* SignUpViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0A216E8B2A3A123600BD5974 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A216E6B2A39D54600BD5974 /* AssessmentApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A216E6E2A39D54600BD5974 /* SignUpView.swift in Sources */,
+				0A216E852A3A11DC00BD5974 /* HomeView.swift in Sources */,
 				0A216E7C2A39D69500BD5974 /* SignUpViewModel.swift in Sources */,
+				0A216E8A2A3A122A00BD5974 /* HomeViewModel.swift in Sources */,
 				0A216E7E2A39D75A00BD5974 /* DataStore.swift in Sources */,
 				0A216E822A3A0CD000BD5974 /* Model.swift in Sources */,
 				0A216E802A39D8B500BD5974 /* InputField.swift in Sources */,
